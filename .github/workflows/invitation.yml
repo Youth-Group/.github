@@ -1,0 +1,17 @@
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  automate_invite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invite on label
+        uses: vj-abigo/invite-on-label@v1.4
+        with:
+          organization: Youth-Group
+          label: Invitation
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          comment: '<b><h1>Welcome to the community🎉</h1></b><br>Don''t forget to accept the invitation sent through mail.<br>If you want to contribute to open source and be with cool young people.😘<br>We help and encourage each other to contribute little and often to open source!👍'
+        env:
+          INVITE_TOKEN: ${{ secrets.INVITE_TOKEN }}
