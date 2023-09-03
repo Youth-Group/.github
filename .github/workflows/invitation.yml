@@ -11,7 +11,7 @@ jobs:
       - name: Invite To Organisation
         uses: actions/github-script@v6 # v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.INVITE_TOKEN }}
           script: |
             const org = 'Youth-Group';
             const { owner, repo } = context.repo;
