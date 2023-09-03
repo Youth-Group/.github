@@ -33,7 +33,7 @@ jobs:
                 issue_number,
                 owner,
                 repo,
-                body: "You are already a part of Naomi's Novas~!\n\nIf you haven't already, join our [Discord](https://chat.naomi.lgbt)!"
+                body: "You are already a part of Youth-Group~!"
               });
             } else {
               await github.rest.orgs.createInvitation({
@@ -44,6 +44,6 @@ jobs:
                 issue_number: context.issue.number,
                 owner,
                 repo,
-                body: 'Invite sent~!\n\nBe sure to join our [Discord](https://chat.naomi.lgbt) too!'
+                body: '<b><h1>Welcome to the community🎉</h1></b><br>Don''t forget to accept the invitation sent through mail.<br>If you want to contribute to open source and be with cool young people.😘<br>We help and encourage each other to contribute little and often to open source!👍'
               })
             }
