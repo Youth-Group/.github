@@ -8,7 +8,7 @@ Welcome to Youth Group where anyone interested in passionate coding can connect 
 
 ### How can I join the Youth-Group GitHub community?
 
-> 1. Go to the issues tab [here](https://github.com/Youth-Group/.github/issues).
+> 1. Go to the issues tab [here](https://github.com/Youth-Group/.github/issues/new?assignees=&labels=%E2%9C%89%EF%B8%8F+Invitation&projects=&template=invitation.yml&title=%5BORG%5D+Invite+me+to+the+organization).
 >
 > 2. Create a new issue.
 >
