@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Invite To Organisation
-        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
+        uses: actions/github-script@v6 # v6
         with:
-          github-token: ${{ secrets.INVITE_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const org = 'youth-group';
+            const org = 'Youth-Group';
             const { owner, repo } = context.repo;
             const issue_number = context.issue.number;
             const label = context.payload.label.name;
