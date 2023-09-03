@@ -1,8 +1,11 @@
 name: Invitation to Youth Group - GitHub Organization.
-description: I would like to be part of the awesome community
-title: "Please invite me to the GitHub Community Organization"
-labels: [Invitation]
+description: Use this template to request an invitation to our organization
+title: "[ORG] Invite me to the organization"
+labels: [✉️ Invitation]
 body:
+  - type: markdown
+    attributes:
+      value: '# Join Our Organization'
   - type: input
     id: name
     attributes:

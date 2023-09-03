@@ -5,15 +5,45 @@ on:
     types: [labeled]
 
 jobs:
-  automate_invite:
+  invite:
     runs-on: ubuntu-latest
     steps:
-      - name: Invite on label
-        uses: vj-abigo/invite-on-label@v1.2
+      - name: Invite To Organisation
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
         with:
-          organization: Youth-Group
-          label: Invitation
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          comment: '<b><h1>Welcome to the community🎉</h1></b><br>Don''t forget to accept the invitation sent through mail.<br>If you want to contribute to open source and be with cool young people.😘<br>We help and encourage each other to contribute little and often to open source!👍'
-        env:
-          INVITE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.INVITE_TOKEN }}
+          script: |
+            const org = 'youth-group';
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const label = context.payload.label.name;
+            const { id: invitee_id, login: username } = context.payload.issue.user;
+
+            if (label !== '✉️ Invitation') {
+              return;
+            }
+
+            const isMember = await github.rest.orgs.checkMembershipForUser({
+              org,
+              username,
+            }).catch(() => null);
+
+            if (isMember) {
+              await github.rest.issues.createComment({
+                issue_number,
+                owner,
+                repo,
+                body: "You are already a part of Naomi's Novas~!\n\nIf you haven't already, join our [Discord](https://chat.naomi.lgbt)!"
+              });
+            } else {
+              await github.rest.orgs.createInvitation({
+                org,
+                invitee_id,
+              })
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner,
+                repo,
+                body: 'Invite sent~!\n\nBe sure to join our [Discord](https://chat.naomi.lgbt) too!'
+              })
+            }
