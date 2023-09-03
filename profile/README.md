@@ -6,7 +6,7 @@ Welcome to Youth Group where anyone interested in passionate coding can connect 
 
 > Raise an issue to join the **Youth Group** GitHub Community.
 
-### How can I join the Design and Code GitHub community?
+### How can I join the Youth-Gorup GitHub community?
 
 > 1. Go to the issues tab [here](https://github.com/Youth-Group/support/issues).
 >
@@ -18,16 +18,16 @@ Welcome to Youth Group where anyone interested in passionate coding can connect 
 
 ### How do I set the membership to public?
 
-> 1. Navigate to our GitHub community page: https://github.com/Youth-Group
+> 1. Navigate to our GitHub community page: <https://github.com/Youth-Group>
 >
 > 2. Click on the people header or click [here](https://github.com/orgs/Youth-Group/people) : <br>
 >
-> <img width="221" alt="people" src="https://user-images.githubusercontent.com/65373279/133414355-a2605bc5-a4c4-4283-aa56-6ab8d1643c15.PNG"> <br>
+> <img width="221" alt="people" src="./guide-1.png"> <br>
 >
 > 3. Enter your github username in the searchbar: <br>
 >
-> <img width="233" alt="searchbar" src="https://user-images.githubusercontent.com/65373279/133414391-f26a56a3-2b0a-47ba-a598-37fb30ead5eb.PNG"> <br>
+> <img width="233" alt="searchbar" src="./guide-2.png"> <br>
 >
 > 4. Check if it is `Private` (the default) and set it to `Public`: <br>
 >
-> <img width="639" alt="makepublic" src="https://user-images.githubusercontent.com/65373279/133414458-d76d47b4-1c96-439c-aff9-41a16a93ef9b.png"><br>
+> <img width="639" alt="makepublic" src="./guide-3.png"><br>
