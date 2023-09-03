@@ -6,7 +6,7 @@ Welcome to Youth Group where anyone interested in passionate coding can connect 
 
 > Raise an issue to join the **Youth Group** GitHub Community.
 
-### How can I join the Youth-Gorup GitHub community?
+### How can I join the Youth-Group GitHub community?
 
 > 1. Go to the issues tab [here](https://github.com/Youth-Group/support/issues).
 >
@@ -22,12 +22,12 @@ Welcome to Youth Group where anyone interested in passionate coding can connect 
 >
 > 2. Click on the people header or click [here](https://github.com/orgs/Youth-Group/people) : <br>
 >
-> <img width="221" alt="people" src="./guide-1.png"> <br>
+> <img width="221" alt="people" src="./profile/guide-1.png"> <br>
 >
 > 3. Enter your github username in the searchbar: <br>
 >
-> <img width="233" alt="searchbar" src="./guide-2.png"> <br>
+> <img width="233" alt="searchbar" src="./profile/guide-2.png"> <br>
 >
 > 4. Check if it is `Private` (the default) and set it to `Public`: <br>
 >
-> <img width="639" alt="makepublic" src="./guide-3.png"><br>
+> <img width="639" alt="makepublic" src="./profile/guide-3.png"><br>
